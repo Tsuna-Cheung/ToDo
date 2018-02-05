@@ -2,12 +2,14 @@
 <html>
 <head>
     <title>ToDo</title>
-
-    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+ 
 	<script src="jquery-mobile/jquery-1.8.3.min.js" type="text/javascript"></script>
     <script src="jquery-mobile/jquery.mobile-1.4.5.min.js" type="text/javascript"></script>
     <!-- <script src="js/index.js"type="text/javascript" charset="utf-8"></script> -->
+    <script src="js/backendless.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/index.js" type="text/javascript" charset="utf-8"></script>
 	<link href="jquery-mobile/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
 </head>
 
 <body>
@@ -20,6 +22,19 @@
         <li>First Task
         <li>Second Task
     </ul>
+      
+      <form>
+          <div class="ui-field-contain" id="taskSel">
+              <label for="select-native-1">ToDo:</label>
+              <select name="select-native-1" id="select-native-1">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+              </select>
+          </div>
+      </form>
+      <input type="button" id="deleteTaskButton" value="Delete Task"/>
     </div>
+    
 </body>
 </html>
