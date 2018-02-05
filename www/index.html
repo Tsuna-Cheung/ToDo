@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Application Lifecycle Test</title>
+
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+	<script src="jquery-mobile/jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="jquery-mobile/jquery.mobile-1.4.5.min.js" type="text/javascript"></script>
+    <script src="js/index.js"type="text/javascript" charset="utf-8"></script>
+    <script src="js/storage.js"type="text/javascript" charset="utf-8"></script>
+	<link href="jquery-mobile/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onload="onLoad()">
+  
+  	<h1>Event counts</h1>
+    <div id="myText">vacuum cleaner</div>
+	<div id="launched"></div>
+	<div id="paused"></div>
+	<div id="resumed"></div>
+    <p id="test"></p>
+    <div data-role="content">
+        <ul data-role="lisstview" data-inset="true" id="searchName"></ul>
+    </div>
+    
+</body>
+</html>
